@@ -1,91 +1,107 @@
 body {
-margin: 0px;
-padding-bottom: 1000px;
-
-
-}
-
-.header {
-display: flex;
-justify-content: space-between;
-height: 100px;
-position: fixed;
-left: 0;
-right: 0;
-
-}
-
-.logo-div {
-background-color:#F9F6EE;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 300px;
-
-
-}
-
-.logo-button {
-background-color: transparent;
-border-width: 0px;
-font-family: "Abril Fatface", serif;
-
-
-}
-
-.logo-button-p {
-    font-family: "Abril Fatface", serif;
-    font-size: 35px;
-    font-weight: 300;
-    color: #232323;
-}
-
-.login-div {
-
-}
-
-.menu-buttons-div {
-background-color: #F9F6EE;
-flex: 1;
-display: flex;
-align-items: center;
-
-}
-.menu-buttons {
-    padding-left: 50px;
-    border: 0px;
-    background-color: transparent;
-    font-size: 17px;
-    font-family: "Rubik", sans-serif;   
-}
-
-.login-try {
-    background-color: #F9F6EE;
-    width: 400px;
+    margin: 0px;
+    margin-top: 100px;
+    
+    
+    
+    
+    }
+    
+    .header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FAF9F6;
+    
+    }
+    
+    .container {
+        padding-bottom: 800px;
+    }
+    
+    .logo-div {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
     
     
-}
-
-.login-try button:nth-child(1) {
-    background-color: white;
+    }
+    
+    .logo-button {
+    background-color: transparent;
     border-width: 0px;
-    width: 90px;
-    height: 50px;
-    font-size: 18px;
-    font-family: "Rubik", sans-serif;  
-    margin-right: 5px; 
-}
-
-.login-try button:nth-child(2) {
-    background-color: black;
-    color: white;
-    border-width: 0px;
-    width: 150px;
-    height: 50px;
-    font-size: 18px;
-    font-family: "Rubik", sans-serif;  
-}
+    font-family: "Abril Fatface", serif;
+    
+    
+    }
+    
+    .logo-button-p {
+        font-family: "Abril Fatface", serif;
+        font-size: 35px;
+        font-weight: 300;
+        color: #232323;
+    
+    }
+    
+    
+    .menu-buttons-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    
+    
+    
+    }
+    .menu-buttons {
+        margin-left: 50px;
+        border: 0px;
+        background-color: transparent;
+        font-size: 17px;
+        font-family: "Rubik", sans-serif;
+        
+    }
+    
+    
+    
+    .login-try {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FAF9F6;
+        
+        
+    }
+    
+    .login-try button:nth-child(1) {
+        border-width: 0px;
+        width: 90px;
+        height: 50px;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;  
+        margin-right: 5px; 
+        background-color: #D3D3D3;
+    }
+    
+    .login-try button:nth-child(2) {
+        background-color: black;
+        color: white;
+        border-width: 0px;
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;  
+    }
+    
+    
+    .main-part {
+        display: flex;
+                   
+    }
 
