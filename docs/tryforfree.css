@@ -1,0 +1,10 @@
+.main-title {
+    margin-top: 6vw;
+    margin-left: 5vw;
+}
+
+.main-title p {
+    font-size: clamp(1px, 10vw, 50px);
+    font-family: "Rubik", sans-serif;  
+    
+}
