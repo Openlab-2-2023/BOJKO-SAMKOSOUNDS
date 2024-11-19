@@ -1,10 +1,40 @@
+body {
+    background-color: #D3D3D3;
+}
+
 .main-title {
-    margin-top: 6vw;
-    margin-left: 5vw;
+    display: flex;
+    margin-top: 8vw;
+    justify-content: center;
+
 }
 
 .main-title p {
-    font-size: clamp(1px, 10vw, 50px);
+    font-size: clamp(1px, 6vw, 50px);
     font-family: "Rubik", sans-serif;  
+    font-weight: 500;
     
 }
+
+.options {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 400px;
+    right: 400px;
+    justify-content: space-between;
+
+}
+
+.options div {
+    width: 350px;
+    height: 400px;
+}
+
+.options div:nth-child(1) {
+    background-color: blueviolet;
+}
+.options div:nth-child(2) {
+    background-color: red;
+}
+
