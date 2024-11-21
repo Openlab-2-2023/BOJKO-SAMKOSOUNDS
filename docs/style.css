@@ -35,7 +35,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #FAF9F6;
+    background-color: #FFF5EE;
     }
     .container {
         padding-bottom: 800px;
@@ -106,7 +106,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #FAF9F6;
+        background-color: #FFF5EE;
         
         
     }
@@ -152,7 +152,7 @@ body {
     
     .main {
         height: 1000px;
-        background-color: #FAF9F6;
+        background-color: #FFF5EE;
 
     }
     .main-title p {

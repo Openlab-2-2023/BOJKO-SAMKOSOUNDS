@@ -1,40 +1,74 @@
 body {
-    background-color: #D3D3D3;
+    background-color: #fefcf0;
 }
 
 .main-title {
     display: flex;
-    margin-top: 8vw;
+    margin-top: 4vw;
     justify-content: center;
-
 }
 
 .main-title p {
     font-size: clamp(1px, 6vw, 50px);
     font-family: "Rubik", sans-serif;  
     font-weight: 500;
-    
 }
 
 .options {
     display: flex;
     justify-content: center;
-    position: absolute;
-    left: 400px;
-    right: 400px;
-    justify-content: space-between;
 
 }
 
+@media (max-width: 900px) {
+    .options {
+      display: block;
+      justify-content: center;
+      margin-left: 25%;
+    }
+  }
+
 .options div {
-    width: 350px;
-    height: 400px;
+    width: clamp(300px, 40vw, 500px);
+    height: clamp(350px, 49vh, 600px);
+    margin-right: 20px;
+    ;
 }
 
 .options div:nth-child(1) {
-    background-color: blueviolet;
+    background-color: #f9f1e4;
 }
 .options div:nth-child(2) {
-    background-color: red;
+    background-color: #f9f1e4;
+}
+
+.type{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: "Rubik", sans-serif;  
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.price{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: "Rubik", sans-serif;  
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.parfs {
+    padding-top: px;
+
+}
+
+.parfs p {
+    margin-left: 25px;
+    font-family: "Rubik", sans-serif; 
+    font-family: 14px; 
+
 }
 
