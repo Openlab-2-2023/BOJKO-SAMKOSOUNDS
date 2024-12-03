@@ -1,47 +1,26 @@
+html {
+  height: 1000px;
+}
+a {
+  text-decoration: none;
+}
 body {
-    margin: 0px;
-    margin-top: 100px;
-    }
-    
-    .back-to-top {
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: fixed;
-        right: 20px;
-        bottom: 40px;
-        background-color: #D3D3D3;
-        border-radius: 6px;
-        border-width: 0px;
-        cursor: pointer;
-        
-    }
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.header {
+display: flex;
+justify-content: space-between;
+height: 100px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: #FFF5EE;
+}
 
-    .back-to-top:hover {
-        background-color: #c2c2c2;
-    }
-    
-    .back-to-top img {
-        width: 20px;
-        height: 20px;
-        margin-top: 3px;
-        
-    }
-    .header {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #FFF5EE;
-    }
-    .container {
-        padding-bottom: 800px;
-    }
-    
-    .logo-div {
+.logo-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +34,8 @@ body {
     margin-bottom: 5px;
     text-wrap: nowrap;
     min-width: 100px;
+    text-decoration: none;
+
     
     
     }
@@ -64,6 +45,8 @@ body {
         font-size: 35px;
         font-weight: 300;
         color: #232323;
+        text-decoration: none;
+
     }
     @media (max-width: 1200px) {
         .logo-button {
@@ -146,82 +129,95 @@ body {
         text-decoration: none;
         justify-content: center;
     }
-    
-   
 
-    
-    .main {
-        height: 1000px;
-        background-color: #FFF5EE;
-
-    }
-    .main-title p {
-        
-        left: 0;
-        font-weight: bold;
-        font-family: Lato;
-        padding-top: 30px;
-    }
-
-    .main-title p:nth-child(1) {
-        margin: 2px;
-        font-size: clamp(40px, 6vw, 80px);
-        margin-left: 8vw;
-        
-    }
-
-    .main-title p:nth-child(2) {
-        margin-left: 8vw;
-        padding-top: 0px;
-        width: clamp 2vw;
-        max-width: 600px;
-        font-size: clamp(14px, 2vw, 17px);
-        margin-bottom: clamp(10px, 3vw, 50px);
-        
-}
-
-.try-for-free-main {
-    margin-top: 3vw;
-    margin-left: 8vw;
-    padding-top: 17px;
-    padding-right: 25px;
-    padding-bottom: 17px;
-    padding-left: 25px;
-    width: clamp 2vw;
-    max-width: 600px;
-    font-size: clamp(15px, 2vw, 17px);
-    border-radius: 0;
-    border-style: solid;
-    border-width: 0;
-    cursor: pointer;
-    background-color: #5D3FD3;
-    color: #000000;
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;  
-
-}
-
-.try-for-free-main:hover {
-    background-color: #6651bd;
+.sound-effects-button {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
 }
 
 .pricing-button {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
-.sound-effects-button {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
+
+.main {
+  height: 400px;
+  background-color: #FFF5EE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
 }
 
+.main p:nth-child(1) {
+  font-family: Playfair Display;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: clamp(40px, 4vw, 60px);
+  text-wrap: nowrap;
+}
+
+.main p:nth-child(2) {
+  width: 700px;
+  text-align: center;
+  font-size: 19px;
+  font-family: Roboto;
+  line-height: 30px;
+}
+
+@media (max-width: 740px) {
+  .main p:nth-child(2) {
+    width: 500px;
     
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .main p:nth-child(2) {
+    width: 300px;
+    
+    
+  }
+}
+
+.soundeffects {
+  background-color: #121418;
+  height: 800px;
+  margin-top: 0px;
+}
+
+.soundeffects p:nth-child(1) {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 21px;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: clamp(20px, 1vw, 10px);
+}
+
+
+.type {
+  background-color: rebeccapurple;
+  width: 5vwpx;
+  height: 265px;
+  margin-bottom: 15px;
+}
+
+
+
 
     
-
-    
-
- 
