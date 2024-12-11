@@ -10,38 +10,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Samko Sounds</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+<script src="index.js" defer></script>
 <body>
 
-    <div>
+    <div class="container">
+        
+            <button id="backToTop" class="back-to-top" onclick="backToTop()">
+                <img src="images/arrowup.png">
+            </button>
+        
+
+        
         <div class="header">
             <div class="logo-div">
-                <button  class="logo-button"><p  class="logo-button-p">Samko Sounds</p></button>
-
+                <div><button  class="logo-button"><p>Samko Sounds</p></button></div>
             </div>
 
+            
+
             <div class="menu-buttons-div">
-                <div>
-                <button class="menu-buttons">Music</button>
-                <button class="menu-buttons">Sound effects</button>
-                <button class="menu-buttons">Pricing</button>
-                <button class="menu-buttons">Enterprise</button>
-                </div>
+                    <button><a>Music</a></button>
+                    <button><a href="/docs/soundeffectspage/soundeffects.html" class="sound-effects-button">Sound effects</a></button>
+                    <button><a class="pricing-button" href="/docs/tryforfree/tryforfree.html">Pricing</a></button>
+                    <button><a>Enterprice</a></button>
             </div>
 
             <div class="login-try">
                 
-                    <button class="login-buttons">Log in</button>
-                    <button class="login-buttons">Try for free</button>
+                    <a href="/docs/loginpage/login.html" class="login-buttons">Log in</a>
+                    <a href="/docs/tryforfree/tryforfree.html" class="login-buttons">Try for free</a>
                 
             </div>
         </div>
+
+        <div class="main">
+            <div class="main-title">
+                <p>Where sound meets.<br>Imagination</p>
+                <p>Explore an unparalleled library of music and sound effects, with millions of tracks and effects enjoyed globally every day. Your creations are set to make an impact.</p>
+
+                <a href="/docs/tryforfree/tryforfree.html" class="try-for-free-main">
+                    Try for free
+                </a>
+            </div>
+            <div class="gramophone">
+                          
+            </div>
+        </div>
+
+        
+        
     </div>
     
 </body>

@@ -1,0 +1,93 @@
+body {
+    background-color: #29292e;
+}
+
+.main-title {
+    display: flex;
+    margin-top: 1vw;
+    justify-content: center;
+}
+
+.main-title p {
+    font-size: clamp(1px, 6vw, 70px);
+    font-family: "Playfair Display", sans-serif;  
+    font-weight: 700;
+    color: #F9F6EE;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    justify-content: center;
+    column-gap: clamp(500px, 35vw, 600px);
+}
+
+.option {
+    background-color: #F9F6EE;
+    height: 400px;
+    width: 500px;
+    margin-left: -230px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 7px;
+}
+@media(max-width: 1100px) {
+    .grid {
+        grid-template-columns: 40px;
+    }
+    .option {
+        margin-top: 30px;
+        width: 450px;
+    }
+}
+.type {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: "Rubik", sans-serif;  
+    font-weight: 400;
+}
+
+.price {
+    font-size: 40px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: "Rubik", sans-serif;  
+    font-weight: 500;
+    margin-top: 30px;
+    
+}
+.bonuses {
+    margin-bottom: 70px;
+}
+.bonuses p {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: "Rubik", sans-serif;  
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+}
+
+.freetrialbutton {
+    width: 80%;
+    height: 60px;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0px;
+    background-color: pink;
+    font-family: "Rubik", sans-serif;  
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.freetrialbutton:hover {
+   background-color: rgb(244, 182, 193);
+}
