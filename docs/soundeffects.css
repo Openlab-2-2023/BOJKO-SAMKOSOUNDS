@@ -186,7 +186,7 @@ background-color: #FFF5EE;
 
 .soundeffects {
   background-color: #121418;
-  height: 800px;
+  height: 700px;
   margin-top: 0px;
 }
 
@@ -199,33 +199,122 @@ background-color: #FFF5EE;
   padding-top: 20px;
 }
 
+.grid-wrap {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .grid {
+  
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, auto);
-  margin-left: 50px;
-  margin-right: 50px;
-  gap: clamp(20px, 1vw, 10px);
+  gap: 20px;
+  
+}
+
+@media(max-width: 1315px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+  .soundeffects {
+    height: 900px;
+  }
+}
+
+@media(max-width: 885px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+  .soundeffects {
+    height: 1200px;
+  }
+}
+
+@media(max-width: 655px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .soundeffects {
+    height: 5800px;
+  }
 }
 
 
 .type {
   background-color: rebeccapurple;
-  width: clamp(20px, 5wvpx, 250px);
-  height: 265px;
-  margin-bottom: 15px;
+  width: clamp(120px, 5vwpx, 500px);
+  height: 250px;
+  margin-bottom: 5px;
+  
 }
 
-@media (max-width: 1420px) {
-  .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+
+@media(max-width: 655px) {
+  .type {
+    width: 400px;
+    height: 450px;
   }
+  .type-img {
+    height: 350px;
+  }
+  .image-wrap {
+    height: 300px;
+  }
+
+}
+
+.image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.type-img {
+  width: 200px;
+  
+}
+
+.grid div {
+  cursor: pointer;
+}
+
+.type:nth-child(1) {
+  background-color: pink;
+}
+
+.type:nth-child(2) {
+  background-color: #F88379;
+}
+.type:nth-child(3) {
+  background-color: #CCCCFF;
+}
+.type:nth-of-type(3) .type-img {
+  height: 150px;
+  width: 150px;
+}
+
+.image-wrap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
 }
 
 
+.grid p {
+  margin-top: 14px;
+  font-weight: 600;
+  font-family: Lato;
+  margin-left: 10px;
+  font-size: 17px;
+
+}
 
 
     
