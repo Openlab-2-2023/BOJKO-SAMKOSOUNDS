@@ -1,7 +1,14 @@
 body {
     margin: 0px;
     margin-top: 100px;
+    height: 800px;
+
     }
+
+a {
+    text-decoration: none;
+    color: black;
+}
     
     .back-to-top {
         display: block;
@@ -40,7 +47,7 @@ body {
     z-index: 50;
     }
     .container {
-        padding-bottom: 800px;
+        height: 100%;
     }
     
     .logo-div {
@@ -153,9 +160,10 @@ body {
 
     
     .main {
-        height: 1000px;
+        
         background-color: #FFF5EE;
         display: flex;
+        height: 100%;
 
     }
     .main-title p {
@@ -177,22 +185,54 @@ body {
     .main-title p:nth-child(2) {
         margin-left: 8vw;
         padding-top: 0px;
-        width: clamp 2vw;
+        width: 600px;
         max-width: 600px;
         font-size: clamp(14px, 2vw, 17px);
         margin-bottom: clamp(10px, 3vw, 50px);
         
 }
 
-
-
-.gramophone img {
-    width: 550px;
-    transform: rotate(10deg);
-    margin-left: -100px;
-    position: relative;
-    margin-top: 70px;
+@media (max-width: 1400px) {
+    .main-title p:nth-child(2) {
+        width: 500px;
+    }
 }
+
+@media (max-width: 1000px) {
+    .main-title p:nth-child(2) {
+        width: 400px;
+    }
+}
+
+
+
+.jupiter img {
+    width: 60vw;
+    
+    position: absolute;
+    top: 140px;
+    right: 0;
+    
+}
+
+
+@media (max-width: 1500px) {
+    .jupiter img {
+      width: 55vw;;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .jupiter img {
+      width: 50vw;;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .jupiter img {
+      display: none;
+    }
+  }
 
 .try-for-free-main {
     margin-top: 3vw;

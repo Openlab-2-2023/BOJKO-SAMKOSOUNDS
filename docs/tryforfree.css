@@ -3,6 +3,11 @@ body {
     padding-top: 80px;
 }
 
+a {
+    text-decoration: none ;
+    color: black;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -54,6 +59,7 @@ body {
         display: flex;
         align-items: center;
         min-width: 100px;
+        text-decoration: none;
         
         
         
@@ -68,6 +74,7 @@ body {
             text-wrap: nowrap;
             width: 6vw;
             min-width: 120px;
+            text-decoration: none;
         }
     
         @media (max-width: 865px) {
@@ -140,43 +147,58 @@ body {
 
 .main-title {
     display: flex;
-    margin-top: 1vw;
+    margin-top: vw;
     justify-content: center;
+    height: 150px;
+}
+
+.main-title p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .main-title {
     font-family: Playfair Display;
-    margin-bottom: 10px;
+    margin-bottom: px;
     font-weight: bold;
-    font-size: clamp(40px, 4vw, 60px);
+    font-size: clamp(40px, 3.5vw, 60px);
     text-wrap: nowrap;
 }
 
+.grid-wrap {
+    display: flex;
+    
+    justify-content: center;
+}
 .grid {
     display: grid;
-    grid-template-columns: 40px 40px;
-    justify-content: center;
-    column-gap: clamp(500px, 35vw, 600px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
 }
 
 .option {
-    background-color: #d2d2d2;
-    height: 400px;
-    width: 500px;
-    margin-left: -230px;
+    background-color: rgb(218, 218, 218);
+    height: 330px;
+    width: 450px;
+    
     padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border-radius: 7px;
+    
+    padding-bottom: 40px;
+
 }
-@media(max-width: 1100px) {
+@media(max-width: 1400px) {
     .grid {
-        grid-template-columns: 40px;
+        grid-template-columns: repeat(2, 1fr);
     }
-    .option {
-        margin-top: 30px;
-        width: 450px;
+    
+}
+
+@media(max-width: 950px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
+    
 }
 .type {
     font-size: 20px;
@@ -195,9 +217,7 @@ body {
     margin-top: 30px;
     
 }
-.bonuses {
-    margin-bottom: 70px;
-}
+
 .bonuses p {
     font-size: 16px;
     margin-left: 15px;
@@ -218,13 +238,14 @@ body {
     border-style: solid;
     border-width: 0;
     border-radius: 0px;
-    background-color: pink;
+    background-color: black;
     font-family: "Rubik", sans-serif;  
     font-size: 15px;
     cursor: pointer;
+    color: white;
 
 }
 
 .freetrialbutton:hover {
-   background-color: rgb(244, 182, 193);
+   background-color: rgb(54, 54, 54);
 }

@@ -1,13 +1,15 @@
 html {
-  height: 1000px;
+  
 }
 a {
   text-decoration: none;
+  color: black;
 }
 body {
   margin-top: 100px;
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 .header {
 display: flex;
@@ -18,6 +20,7 @@ top: 0;
 left: 0;
 right: 0;
 background-color: #FFF5EE;
+z-index: 2;
 }
 
 .logo-div {
@@ -150,6 +153,7 @@ background-color: #FFF5EE;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0px;
+  position: relative;
 }
 
 .main p:nth-child(1) {
@@ -167,6 +171,24 @@ background-color: #FFF5EE;
   font-family: Roboto;
   line-height: 30px;
 }
+
+.main img:nth-child(3) {
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+
+.main img:nth-child(4) {
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(-1);
+}
+
 
 @media (max-width: 740px) {
   .main p:nth-child(2) {
@@ -285,6 +307,10 @@ background-color: #FFF5EE;
 .type:nth-child(1) {
   background-color: pink;
 }
+.type:nth-of-type(1) .type-img {
+  height: 200px;
+  width: 200px;
+}
 
 .type:nth-child(2) {
   background-color: #F88379;
@@ -296,6 +322,76 @@ background-color: #FFF5EE;
   height: 150px;
   width: 150px;
 }
+
+.type:nth-child(4) {
+  background-color: #5F9EA0;
+}
+
+.type:nth-of-type(4) .type-img {
+  height: 150px;
+  width: 200px;
+}
+
+.type:nth-child(5) {
+  background-color: #FFFF8F;
+}
+
+.type:nth-of-type(5) .type-img {
+  height: 180px;
+  width: 180px;
+}
+
+.type:nth-child(6) {
+  background-color: #9F2B68;
+}
+
+.type:nth-child(7) {
+  background-color: #AFEEEE;
+}
+
+.type:nth-child(8) {
+  background-color: #90EE90;
+}
+
+.type:nth-of-type(8) .type-img {
+  height: 180px;
+  width: 180px;
+}
+
+.type:nth-child(9) {
+  background-color: #FF6347;
+}
+
+.type:nth-of-type(9) .type-img {
+  height: 180px;
+  width: 180px;
+}
+
+.type:nth-child(10) {
+  background-color: #FFDEAD;
+}
+.type:nth-of-type(10) .type-img {
+  height: 200px;
+  width: 180px;
+}
+
+.type:nth-child(11) {
+  background-color: #87CEFA;
+}
+
+.type:nth-child(12) {
+  background-color: #FFFAE3;
+}
+.type:nth-of-type(12) .type-img {
+  height: 190px;
+  width: 190px;
+}
+
+
+
+
+
+
 
 .image-wrap {
   height: 200px;
