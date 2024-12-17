@@ -84,8 +84,6 @@ a {
           }
         }
       
-      
-      
       .login-try {
           width: 300px;
           display: flex;
@@ -199,7 +197,7 @@ a {
   }
 
   .music {
-     background-color: #232323;
+     background-color: #121418;
      height: 350px;
   }
 
@@ -223,6 +221,34 @@ a {
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
   }
+
+  @media(max-width: 1315px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .music {
+      height: 600px;
+    }
+  }
+
+  @media(max-width: 650px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .music {
+      height: 800px;
+    }
+  }
+
+  @media(max-width: 440px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .music {
+      height: 1500px;
+    }
+  }
+
 
   .genre {
     
