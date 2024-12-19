@@ -233,12 +233,24 @@ body {
     background-color: #101010;
 }
 
-.effect img {
+
+
+.effect img:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    
+    background-color: pink;
+}
+
+.effect img:nth-child(2) {
     width: 60px;
     height: 60px;
     object-fit: cover;
     background-color: pink;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .effect img:hover {
