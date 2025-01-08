@@ -306,32 +306,11 @@ body {
     background-color: #101010;
 }
 
-<<<<<<< HEAD
 .effect img:nth-child(1) {
     width: 20px;
     height: 20px;
     object-fit: cover;
     background-color: #121418;
-=======
-
-
-.effect img:nth-child(1) {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    
-    background-color: pink;
-}
-
-.effect img:nth-child(2) {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    background-color: pink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
->>>>>>> 0110ba051f3afb53e5a035f335ebb9eddba601db
 }
 
 .effect img:nth-child(2) {

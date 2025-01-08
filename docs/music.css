@@ -236,13 +236,7 @@ a {
     }
   }
 
-  @media (max-width: 645px) {
-    .titles p:nth-child(1) {
-      
-      
-      
-    }
-  }
+
   
   @media (max-width: 500px) {
     .titles p:nth-child(2) {
