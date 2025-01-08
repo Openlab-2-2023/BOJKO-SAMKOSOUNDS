@@ -4,7 +4,9 @@ body {
   margin-left: 0px;
   margin-bottom: 0px;
 }
-
+html {
+  height: 600px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -21,6 +23,42 @@ a {
   background-color: #FFF5EE;
   z-index: 2;
   }
+
+  .hamburger-wrapper {
+    display: none;
+}
+.hamburger-div {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4vw;
+    
+}
+
+.hamburger-button {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-width: 0;
+    cursor: pointer;
+    
+}
+
+.hamburger-image {
+    width: 34px;
+}
+
+@media (max-width: 865px) {
+  
+  .hamburger-wrapper {
+      display: flex;
+  }
+
+}
   
   .logo-div {
       display: flex;
@@ -142,8 +180,18 @@ a {
     cursor: pointer;
   }
 
+  @media(max-width: 630px) {
+    .login-try a:nth-child(2) {
+        display: none;
+    }
+    .login-try {
+        width: 150px;
+    }
+}
+
+
   
-  .main {
+  .titles {
     height: 350px;
     background-color: #FFF5EE;
     display: flex;
@@ -153,15 +201,15 @@ a {
     position: relative;
   }
   
-  .main p:nth-child(1) {
+  .titles p:nth-child(1) {
     font-family: Playfair Display;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: clamp(40px, 4vw, 60px);
-    text-wrap: nowrap;
+    font-size: 40px;
+    text-align: center;
   }
   
-  .main p:nth-child(2) {
+  .titles p:nth-child(2) {
     width: 700px;
     text-align: center;
     font-size: 19px;
@@ -169,7 +217,7 @@ a {
     line-height: 30px;
   }
   
-  .main img:nth-child(3) {
+  .titles img:nth-child(3) {
     width: 150px;
     position: absolute;
     z-index: 1;
@@ -181,15 +229,23 @@ a {
   
   
   @media (max-width: 740px) {
-    .main p:nth-child(2) {
+    .titles p:nth-child(2) {
       width: 500px;
+      
+      
+    }
+  }
+
+  @media (max-width: 645px) {
+    .titles p:nth-child(1) {
+      
       
       
     }
   }
   
   @media (max-width: 500px) {
-    .main p:nth-child(2) {
+    .titles p:nth-child(2) {
       width: 300px;
       
       
@@ -240,14 +296,7 @@ a {
     }
   }
 
-  @media(max-width: 440px) {
-    .grid {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .music {
-      height: 1500px;
-    }
-  }
+
 
 
   .genre {
@@ -268,6 +317,8 @@ a {
     font-weight: bold;
 
   }
+
+
 
 .genre:nth-child(1) {
   background-color: #FF6347;
@@ -299,6 +350,44 @@ a {
     width: 100%;
   }
 
-  .genre:nth-of-type(2) {
-
+  @media(max-width: 440px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .music {
+      height: 1700px;
+    }
+    .genre {
+      width: 250px;
+      height: 250px;
+    }
+    .genre img {
+      height: 74%;
+    }
   }
+
+
+  .navigation {
+    background-color: #FFF5EE;
+    height: 600px;
+    display: none;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.nav-buttons a {
+    font-size: 35px;
+    font-family: "Rubik", sans-serif;  
+    cursor: pointer;
+
+}
+
+.nav-buttons a:hover {
+    color: #525252;
+}

@@ -32,9 +32,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
 </head>
+<script src="playback logic.js" defer></script>
+<script src="navbar.js" defer></script>
+
 <body>
 
     <div class="header">
+        <div class="hamburger-wrapper">
+            <div class="hamburger-div">
+                <button class="hamburger-button">
+                    <img class="hamburger-image" src="images/hambmenuwhite.png">
+                </button>
+            </div>
+        </div>
         <div class="logo-div">
             <div><button  class="logo-button"><a href="index.html"><p>Samko Sounds</p></a></button></div>
         </div>
@@ -81,24 +91,40 @@
         <div class="effect-wrapper">
 
             <div class="effect">
-                <img src="images/wind.png">
+                <button class="playBtn" data-audio="soundeffectsmp3/classicclean.mp3">
+                    <img class="play-button-img" src="images/playbuttonwhite.png">
+                </button>
+                <img id="hover-image" src="images/wind.png">
                 <p>Classic, Clean</p>
             </div>
 
             <div class="effect">
-                <img src="images/wind.png">
-                <p>Short, Deep</p>
+                <button class="playBtn" data-audio="soundeffectsmp3/fastdeep.mp3">
+                    <img class="play-button-img" src="images/playbuttonwhite.png">
+                </button>
+                <img id="hover-image" src="images/wind.png">
+                <p>Fast</p>
             </div>
 
             <div class="effect">
-                <img src="images/wind.png">
+                <button class="playBtn" data-audio="soundeffectsmp3/deep,low.mp3">
+                    <img class="play-button-img" src="images/playbuttonwhite.png">
+                </button>
+                <img id="hover-image" src="images/wind.png">
                 <p>Deep, Low</p>
             </div>
-
-           
-
         </div>
         
+    </div>
+
+    <div class="navigation">
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="soundeffects.html">Sound Effects</a>
+            <a href="tryforfree.html">Pricing</a>
+            <a>Enterprise</a>
+        </div>
     </div>
 
     
