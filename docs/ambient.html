@@ -1,19 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swooshes/Wind</title>
-    <link rel="stylesheet" href="/docs/swooshes.css">
+    <title>Ambient</title>
+    <link rel="stylesheet" href="swooshes.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Soundeffects</title>
         
-    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -25,15 +24,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>Swooshes</title>
+        
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
 </head>
-<script src="/docs/playback logic.js" defer></script>
-<script src="/docs/navbar.js" defer></script>
+<script src="playback logic.js" defer></script>
+<script src="navbar.js" defer></script>
 
 <body>
 
@@ -52,30 +51,30 @@
         
 
         <div class="menu-buttons-div">
-                <button><a href="/docs/music.html">Music</a></button>
-                <button><a href="/docs/soundeffects.html" class="sound-effects-button">Sound effects</a></button>
-                <button><a class="pricing-button" href="/docs/tryforfree.html">Pricing</a></button>
-                <button><a>Enterprice</a></button>
+                <button><a href="music.html">Music</a></button>
+                <button><a href="soundeffects.html" class="sound-effects-button">Sound effects</a></button>
+                <button><a class="pricing-button" href="tryforfree.html">Pricing</a></button>
+                <button><a href="about.html">Enterprice</a></button>
         </div>
 
         <div class="login-try">
             
-            <a href="/docs/login.html" class="login-buttons">Log in</a>
-            <a href="/docs/tryforfree.html" class="login-buttons">Try for free</a>
+            <a href="login.html" class="login-buttons">Log in</a>
+            <a href="tryforfree.html" class="login-buttons">Try for free</a>
            
         </div>
     </div>
 
-    <div class="main">
+    <div class="main" style="padding-bottom: 100px;">
 
         <div class="container">
 
             <div class="wrapper">
-                <p><a href="/docs/soundeffects.html">Sound Effects/Swooshes</a></p>
+                <p><a href="soundeffects.html">Sound Effects/Ambient</a></p>
                 <div class="box">
     
-                    <div class="name">
-                        <p>Swooshes sound effects</p>
+                    <div class="name" style="background-color: #FFFAE3;">
+                        <p>Ambient sound effects</p>
                     </div>
     
                     <div class="text">
@@ -91,28 +90,32 @@
         <div class="effect-wrapper">
 
             <div class="effect">
-                <button class="playBtn" data-audio="soundeffectsmp3/classicclean.mp3">
-                    <img class="play-button-img" src="/docs/images/playbuttonwhite.png">
+                <button class="playBtn" data-audio="soundeffectsmp3/ambient.mp3">
+                    <img class="play-button-img" src="images/playbuttonwhite.png">
                 </button>
-                <img id="hover-image" src="images/wind.png">
-                <p>Classic, Clean</p>
+                <img id="hover-image" src="images/ambience.png" style="
+                background-color: #FFFAE3;
+                object-fit: contain;
+                
+                ">
+                <p>Ambient</p>
             </div>
 
             <div class="effect">
-                <button class="playBtn" data-audio="soundeffectsmp3/fastdeep.mp3">
+                <button class="playBtn" data-audio="soundeffectsmp3/outdoor.mp3">
                     <img class="play-button-img" src="images/playbuttonwhite.png">
                 </button>
-                <img id="hover-image" src="images/wind.png">
-                <p>Fast</p>
+                <img id="hover-image" src="images/ambience.png" style="
+                background-color: #FFFAE3;
+                object-fit: contain;
+                
+                ">
+                <p>Outdoor</p>
             </div>
 
-            <div class="effect">
-                <button class="playBtn" data-audio="soundeffectsmp3/deep,low.mp3">
-                    <img class="play-button-img" src="images/playbuttonwhite.png">
-                </button>
-                <img id="hover-image" src="images/wind.png">
-                <p>Deep, Low</p>
-            </div>
+           
+        </div>
+
         </div>
         
     </div>
