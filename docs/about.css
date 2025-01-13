@@ -1,0 +1,351 @@
+a {
+  text-decoration: none;
+  color: #121418;
+}
+
+body {
+  margin-top: 100px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF5EE;
+  z-index: 2;
+  }
+  
+  .logo-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      
+      .logo-button {
+      background-color: transparent;
+      border-width: 0px;
+      font-family: "Abril Fatface", serif;
+      margin-left: 50px;
+      margin-bottom: 5px;
+      text-wrap: nowrap;
+      min-width: 100px;
+      text-decoration: none;
+  
+      
+      
+      }
+      
+      .logo-button p {
+          font-family: "Abril Fatface", serif;
+          font-size: 35px;
+          font-weight: 300;
+          color: black;
+          text-decoration: none;
+  
+      }
+      @media (max-width: 1200px) {
+          .logo-button {
+            display: none;
+            
+            
+          }
+        }
+      .menu-buttons-div {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      min-width: 100px;
+      
+      
+      
+      }
+  
+      .menu-buttons-div button {
+          margin-left: 3vw;
+          border: 0px;
+          background-color: transparent;
+          font-size: 17px;
+          font-family: "Rubik", sans-serif;
+          text-wrap: nowrap;
+          width: 6vw;
+          min-width: 120px;
+          
+      }
+      .menu-buttons-div button:nth-child(4) {
+        margin-left: 2vw;
+        
+    }
+  
+      @media (max-width: 865px) {
+          .menu-buttons-div {
+            display: none;
+          }
+        }
+        
+      
+      
+      
+      .login-try {
+          width: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #FFF5EE;
+          
+          
+      }
+      
+      .login-try a:nth-child(1) {
+          border-width: 0px;
+          width: 90px;
+          height: 50px;
+          font-size: 18px;
+          font-family: "Rubik", sans-serif;  
+          margin-right: 5px; 
+          background-color: #D3D3D3;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          text-decoration: none;
+          justify-content: center;
+          
+      }
+      .login-try a:nth-child(1):visited {
+          
+          color: black;
+          
+      }
+  
+      .login-try a:nth-child(2) {
+          background-color: black;
+          color: white;
+          border-width: 0px;
+          width: 150px;
+          height: 50px;
+          font-size: 18px;
+          font-family: "Rubik", sans-serif;  
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          text-decoration: none;
+          justify-content: center;
+      }
+
+      @media(max-width: 630px) {
+          .login-try a:nth-child(2) {
+              display: none;
+          }
+          .login-try {
+              width: 150px;
+          }
+      }
+      
+  
+  .sound-effects-button {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+  }
+  
+  .pricing-button {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .hamburger-wrapper {
+      display: none;
+  }
+  .hamburger-div {
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 4vw;
+      
+  }
+
+  .hamburger-button {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border-width: 0;
+      cursor: pointer;
+      
+  }
+
+  .hamburger-image {
+      width: 34px;
+  }
+
+@media (max-width: 865px) {
+      .menu-buttons-div {
+        display: none;
+      }
+      .hamburger-wrapper {
+          display: flex;
+      }
+
+    }
+
+    .navigation {
+      background-color: #FFF5EE;
+      height: 600px;
+      display: none;
+  }
+  
+  .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      gap: 20px;
+      margin-left: 40px;
+  }
+  
+  .nav-buttons a {
+      font-size: 35px;
+      font-family: "Rubik", sans-serif;  
+      cursor: pointer;
+  
+  }
+  
+  .nav-buttons a:hover {
+      color: #525252;
+  }
+
+
+.main {
+  background-color: #FFF5EE;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+.section1 div {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.soc-image {
+  width: 450px;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 div:nth-child(2) {
+  text-align: left;
+  display: inline;
+  justify-content: center;
+}
+
+.section1 div p:nth-child(1){
+  margin-top: 40%;
+  font-family: "Abril Fatface";
+  font-size: 30px;
+  
+}
+.section1 div p:nth-child(2){
+  max-width: 600px;
+  font-family: "Rubik";
+  font-size: 15px;
+}
+
+.soc-image2 {
+  display: none;
+}
+
+@media(max-width: 1165px) {
+  .soc-image {
+    width: 370px;
+  }
+  .section1 div p:nth-child(1){
+    margin-top: 55%;
+    font-size: 25px;
+    
+  }
+  .section1 div p:nth-child(2){
+    
+    font-size: 14px;
+  }
+}
+
+
+@media(max-width: 900px) {
+  .soc-image {
+    width: 320px;
+  }
+  
+}
+
+@media(max-width: 700px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+  .section1 div {
+    height: 50%;
+    display: block;
+  }
+  .soc-image {
+    display: none;
+  }
+  .soc-image2{
+    display: block;
+    width: 100%;
+    
+  }
+  .section1 div p:nth-child(1){
+    margin-top: 10%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .section1 div p:nth-child(2){
+    margin-left: 20px;
+  }
+  
+}
+
+.contact-me {
+  height: 100px;
+  background-color: #121418;
+}
+
+.contact-me p {
+  color: white;
+}
+
+.contact-me p:nth-child(1) {
+  font-family: "Rubik";
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.contact-me a:nth-child(1) {
+  font-family: "Rubik";
+  font-size: 15px;
+  color: wheat;
+  padding-left: 10px;
+  
+}

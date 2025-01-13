@@ -115,6 +115,10 @@ a {
           width: 6vw;
           min-width: 120px;
       }
+      .menu-buttons-div button:nth-child(4) {
+        margin-left: 2vw;
+        
+    }
   
       @media (max-width: 865px) {
           .menu-buttons-div {
@@ -315,27 +319,27 @@ a {
 
 
 
-.genre:nth-child(1) {
+.grid a:nth-child(1) {
   background-color: #FF6347;
 }
 
-.genre:nth-child(2) {
+.grid a:nth-child(2) {
   background-color: #5af15a;
 }
 
-.genre:nth-child(3) {
+.grid a:nth-child(3) {
   background-color: #87CEFA;
 }
 
-.genre:nth-child(4) {
+.grid a:nth-child(4) {
   background-color: #9F2B68;
 }
 
-.genre:nth-child(5) {
+.grid a:nth-child(5) {
   background-color: #5F9EA0;
 }
 
-.genre:nth-child(6) {
+.grid a:nth-child(6) {
   background-color: pink;
 }
 

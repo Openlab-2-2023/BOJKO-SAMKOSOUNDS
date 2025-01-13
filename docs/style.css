@@ -130,6 +130,11 @@ a {
         min-width: 120px;
     }
 
+    .menu-buttons-div button:nth-child(4) {
+        margin-left: 2vw;
+        
+    }
+
     @media (max-width: 865px) {
         .menu-buttons-div {
           display: none;
