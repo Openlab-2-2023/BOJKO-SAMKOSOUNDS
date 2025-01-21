@@ -6,31 +6,52 @@
 }
 
 .card {
-    background-color: #F9F6EE;
+    background-color: #E5E4E2;
     width: 320px;
-    height: 430px;
+    height: 460px;
     border-radius:44px ;
+    transition: background-color 0.2s ease;
 }
 
 .top {
-    background: rgb(118,21,21);
-    background: linear-gradient(180deg, rgba(118,21,21,1) 0%, rgba(225,72,72,1) 100%); 
+    
+    background-color: #D3D3D3;
     height: 190px;
-    border-radius: 44px;
+    border-radius: 35px;
     display: flex;
     align-items: end;
     justify-content: center;
+    transition: background-color 0.3s ease;
 }
 
 .bottom {
-    
+    transition: background-color 0.3s ease;
     height: 270px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+
+.fill-gray-darker {
+    background-color: #D3D3D3;
+}
+
+.fill-blue {
+    background-color: #0066b2;
+}
+
+.fill-blue-lighter {
+    background-color: royalblue;
 }
 
 
+
+.bottom-p-wrapper {
+    transition: background-color 0.3s ease;
+}
 
 .bottom-p-wrapper p {
     font-family: 'Rubik';
@@ -46,7 +67,19 @@
     width: 110px;
     border-radius: 50%;
     margin-bottom: -35px;
-    border: 4px solid white;
+    border: 4px solid;
+    border-color: white;
+    transition: border-color 0.3s ease;
+
+}
+
+.photo-fill-darker {
+    border-color: #0066b2;
+
+}
+.photo-fill-lighter {
+    border-color: royalblue;
+
 }
 
 .bottom-p-wrapper p:nth-child(1) {
@@ -64,7 +97,7 @@
 
 .line {
     border-bottom: 1px;
-    color: red;
+    color: black;
     width: 220px;
 }
 
@@ -73,5 +106,14 @@
     width: 250px;
     text-align: center;
     
+}
+.soc-media img {
+    cursor: pointer;
+    
+}
+.soc-media {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
 }
 
